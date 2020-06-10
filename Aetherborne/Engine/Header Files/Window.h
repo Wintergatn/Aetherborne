@@ -26,8 +26,8 @@ namespace Aetherborne {
         uint32_t getFramebufferWidth() const { return m_framebufferWidth; }
         uint32_t getFramebufferHeight() const { return m_framebufferHeight; }
 
-        //entt::sink<void(uint32_t, uint32_t)>& onResized() { return m_onResized; }
-        //entt::sink<void(uint32_t, uint32_t)>& onFramebufferResized() { return m_onFramebufferResized; }
+        entt::sink<void(uint32_t, uint32_t)>& onResized() { return m_onResized; }
+        entt::sink<void(uint32_t, uint32_t)>& onFramebufferResized() { return m_onFramebufferResized; }
 
         bool minimized() const;
         bool shouldClose() const;
@@ -45,11 +45,11 @@ namespace Aetherborne {
         bool m_resized = false;
         bool m_minimized = false;
 
-        //entt::sigh<void(uint32_t, uint32_t)> m_onResizedSignal;
-        //entt::sink<void(uint32_t, uint32_t)> m_onResized;
+        entt::sigh<void(uint32_t, uint32_t)> m_onResizedSignal;
+        entt::sink<void(uint32_t, uint32_t)> m_onResized;
 
-        //entt::sigh<void(uint32_t, uint32_t)> m_onFramebufferResizedSignal;
-        //entt::sink<void(uint32_t, uint32_t)> m_onFramebufferResized;
+        entt::sigh<void(uint32_t, uint32_t)> m_onFramebufferResizedSignal;
+        entt::sink<void(uint32_t, uint32_t)> m_onFramebufferResized;
 
         void update();
 
@@ -60,5 +60,6 @@ namespace Aetherborne {
         static void handleKeyInput(GLFWwindow* window, int key, int scancode, int action, int mods);
         static void handleMouseButtonInput(GLFWwindow* window, int mouseButton, int action, int mods);
         static void handleMousePosition(GLFWwindow* window, double xpos, double ypos);
+
     };
 }
