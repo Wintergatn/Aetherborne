@@ -11,19 +11,17 @@
     <Filter Include="Game">
       <UniqueIdentifier>{62cbf5fb-c69f-4575-98a7-daac89a875a7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Game\Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Game\Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Engine\Header Files">
       <UniqueIdentifier>{ae963707-72d1-4e2b-b3b7-7ca5d29adcfb}</UniqueIdentifier>
     </Filter>
     <Filter Include="Engine\Source Files">
       <UniqueIdentifier>{7044c453-5cdf-4772-94af-d07311e708d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Header Files">
+      <UniqueIdentifier>{bb0da52b-dd6e-40d8-ad4c-16eb64b0b48a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Source Files">
+      <UniqueIdentifier>{35f08c6d-fdb1-491f-af53-2812f146642a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -39,6 +37,12 @@
     <ClCompile Include="ConsoleGUI.cpp">
       <Filter>Engine\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ConsoleGUI.h">
@@ -48,6 +52,12 @@
       <Filter>Engine\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Console.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
       <Filter>Engine\Header Files</Filter>
     </ClInclude>
   </ItemGroup>

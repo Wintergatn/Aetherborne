@@ -1,4 +1,2 @@
-﻿  main.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\include\GLFW\glfw3.h(123): message : see previous definition of 'APIENTRY'
+﻿  Window.cpp
   Aetherborne.vcxproj -> C:\Users\nicho\OneDrive\Desktop\Aetherborne\x64\Debug\Aetherborne.exe

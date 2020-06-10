@@ -166,12 +166,16 @@
     <ClCompile Include="AddTimestamp.cpp" />
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="ConsoleGUI.cpp" />
+    <ClCompile Include="Engine.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddTimestamp.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="ConsoleGUI.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
