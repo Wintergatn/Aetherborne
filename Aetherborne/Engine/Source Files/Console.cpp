@@ -2,11 +2,11 @@
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 
+#include <iostream>
 #include <Windows.h>
 #include <stdio.h>
 #include <fcntl.h>
 #include <io.h>
-#include <iostream>
 #include <fstream>
 #include <sstream>
 #include <string>
@@ -16,7 +16,6 @@ using namespace Aetherborne;
 Console::Console() {
 	//AllocConsole();
 	RedirectIOToConsole();
-	AddTimestamp ats(std::cout);
 	std::cout << "AETHERBORNE" << std::endl;
 	std::cout << "Version 0.1 -- Now in Vulkan!" << std::endl;
 
@@ -75,10 +74,10 @@ void Console::run() {
 }
 
 void Console::stop() {
+	m_running = false;
 	std::cout << "Closing console..." << std::endl;
 	FreeConsole();
 	m_thread.join();
-	m_running = false;
 }
 
 bool Console::isRunning() {
@@ -87,16 +86,18 @@ bool Console::isRunning() {
 
 void Console::getInput(std::string &command) {
 	std::getline(std::cin, command);
-	std::stringstream cmdStream(command);
-	std::string cmdParse;
-	cmdStream >> cmdParse;
+	//std::stringstream cmdStream(command);
+	//std::string cmdParse;
+	//cmdStream >> cmdParse;
 
 	//scripting logic
 	std::cout << "Could not recognize command." << std::endl;
 }
 
 void Console::loop() {
-	getInput(m_command);
+	while (m_running) {
+		getInput(m_command);
+	}
 }
 
 // SCRIPT COMMANDS

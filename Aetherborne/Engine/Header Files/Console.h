@@ -1,5 +1,4 @@
 #pragma once
-#include "System.h"
 #include "AddTimestamp.h"
 
 #include <thread>

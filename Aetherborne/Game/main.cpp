@@ -31,11 +31,7 @@
 //#include "SkyboxManager.h"
 //#include "Header Files/SelectionBox.h"
 
-// GENERAL IMPORTS
-#include <iostream>
-
 using namespace Aetherborne;
-
 
 int main() {
 
@@ -47,6 +43,7 @@ int main() {
     graphics.pickPhysicalDevice(window);
 
     Aetherborne::Console console;
+    AddTimestamp ats(std::cout);
     console.run();
 
     Aetherborne::RenderGraph renderGraph(graphics.device(), 2);
@@ -59,7 +56,7 @@ int main() {
     Aetherborne::CameraSystem cameraSystem(engine);
     cameraSystem.setCamera(camera);
     engine.getUpdateGroup().add(cameraSystem, 90);
-    std::cout << "cameraSystem added to systems." << std::endl;
+    std::cout << "CameraSystem added to systems." << std::endl;
 
     window.onFramebufferResized().connect<&Aetherborne::Camera::setSize>(&camera);
 
@@ -72,26 +69,26 @@ int main() {
 
     FreeCam freeCam(camera, window.input(), world, blockManager/*, selectionBox*/);
     engine.getUpdateGroup().add(freeCam, 10);
-    std::cout << "freeCam added to systems." << std::endl;
+    std::cout << "FreeCam added to systems." << std::endl;
 
     freeCam.setPosition({ 0, 80, 0 });
 
     ChunkManager chunkManager(world, freeCam, 16);
     engine.getUpdateGroup().add(chunkManager, 20);
-    std::cout << "chunkManager added to systems." << std::endl;
+    std::cout << "ChunkManager added to systems." << std::endl;
 
     TerrainGenerator terrainGenerator(world, chunkManager);
     terrainGenerator.run();
-    std::cout << "terrainGenerator running." << std::endl;
+    std::cout << "TerrainGenerator running." << std::endl;
 
     ChunkUpdater chunkUpdater(engine, world, blockManager, chunkManager);
     chunkUpdater.run();
-    std::cout << "chunkUpdater running." << std::endl;
+    std::cout << "ChunkUpdater running." << std::endl;
 
     ChunkMesher chunkMesher(engine, world, blockManager, meshManager);
     engine.getUpdateGroup().add(chunkMesher, 30);
     chunkMesher.run();
-    std::cout << "chunkMesher running." << std::endl;
+    std::cout << "ChunkMesher running." << std::endl;
 
     chunkManager.setTerrainGenerator(terrainGenerator);
     chunkManager.setChunkUpdater(chunkUpdater);
@@ -99,7 +96,7 @@ int main() {
 
     Renderer renderer(engine, renderGraph, cameraSystem, world,/* textureManager, skyboxManager, selectionBox,*/ meshManager);
     engine.getUpdateGroup().add(renderer, 100);
-    std::cout << "renderer added to systems." << std::endl;
+    std::cout << "Renderer added to systems." << std::endl;
 
     meshManager.setTransferNode(renderer.transferNode());
     cameraSystem.setTransferNode(renderer.transferNode());
