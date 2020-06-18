@@ -1,33 +1,45 @@
 #pragma once
+#include "System.h"
+#include "AddTimestamp.h"
 
-#include <string>
-#include <unordered_map>
-
+#include <thread>
 
 namespace Aetherborne {
+
+#ifdef _DEBUG
 
 	class Console
 	{
 
 	public:
 		Console();
-		~Console();
 
-		bool isActive();
-		std::string getInput();
-		void buildScriptMap();
-		void parseCommand(std::string cmd);
-		void resetCommand();
+		void run();
+		void stop();
 
-		void clearConsole();
-		void echoConsole();
-		void messageConsole();
-		void exitConsole();
+		void getInput(std::string &command);
+		bool isRunning();
+
+		//void buildScriptMap();
+		//void parseCommand(std::string cmd);
+		//void resetCommand();
+
+		//void clearConsole();
+		//void echoConsole();
+		//void messageConsole();
+		//void exitConsole();
 
 	private:
-		bool cActive;
-		std::string command;
-		std::string tokens[256];
+		void RedirectIOToConsole();
+		void loop();
+
+		static const WORD MAX_CONSOLE_LINES = 500;
+		std::thread m_thread;
+		bool m_running = false;
+		std::string m_command;
+		//std::string tokens[256];
 
 	};
+
+#endif
 }

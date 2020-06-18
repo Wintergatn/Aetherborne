@@ -8,7 +8,7 @@
 
 namespace Aetherborne {
 
-	enum class Key : int32_t {
+    enum class Key : int32_t {
 
         Unknown = -1,
         None = 0,
@@ -229,5 +229,4 @@ namespace Aetherborne {
         a = a & b;
         return a;
     }
-
 }

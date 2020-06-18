@@ -6,17 +6,17 @@
 
 namespace Aetherborne {
 
-	class System;
-	class SystemGroup;
+    class System;
+    class SystemGroup;
 
-	class System {
+    class System {
+
     public:
-        System(int32_t priority);
+        System();
 
         void setPriority(int32_t priority);
         int32_t getPriority() const;
 
-        virtual void preUpdate(Clock& clock) {};
         virtual void update(Clock& clock) = 0;
 
     private:
@@ -29,7 +29,7 @@ namespace Aetherborne {
     public:
         SystemGroup(Clock& clock);
 
-        void add(System& system);
+        void add(System& system, uint32_t priority);
         void remove(System& remove);
         void update();
 
@@ -41,7 +41,5 @@ namespace Aetherborne {
         void setDirty();
 
         friend class System;
-
-	};
-
+    };
 }

@@ -2,6 +2,8 @@
 
 namespace Aetherborne {
 
+#ifdef _DEBUG
+
 	class ConsoleGUI
 	{
 
@@ -11,6 +13,9 @@ namespace Aetherborne {
 		//WORD GetConsoleTextAttribute(HANDLE hCon);
 
 	};
+
+#endif
+
 }
 
 

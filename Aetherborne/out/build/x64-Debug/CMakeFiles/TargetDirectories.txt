@@ -21,6 +21,7 @@ C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/glfw-3.3.2/build/src/C
 C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/glfw-3.3.2/build/src/CMakeFiles/install.dir
 C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/glfw-3.3.2/build/src/CMakeFiles/edit_cache.dir
 C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/glfw-3.3.2/build/src/CMakeFiles/list_install_components.dir
+C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/Game/CMakeFiles/FastNoise.dir
 C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/Game/CMakeFiles/Game.dir
 C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/Game/CMakeFiles/CompileShaders.dir
 C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/Game/CMakeFiles/install/local.dir

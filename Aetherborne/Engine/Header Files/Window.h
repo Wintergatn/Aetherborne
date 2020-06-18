@@ -1,9 +1,10 @@
 #pragma once
 #include <GLFW/glfw3.h>
 #include <stdint.h>
+#include <entt/signal/sigh.hpp>
+
 #include <string>
 #include <memory>
-#include <entt/signal/sigh.hpp>
 
 namespace Aetherborne {
 
@@ -13,7 +14,7 @@ namespace Aetherborne {
     class Window {
 
         friend class Engine;
-
+    
     public:
         Window(uint32_t width, uint32_t height, const std::string& title);
         ~Window();
@@ -60,6 +61,5 @@ namespace Aetherborne {
         static void handleKeyInput(GLFWwindow* window, int key, int scancode, int action, int mods);
         static void handleMouseButtonInput(GLFWwindow* window, int mouseButton, int action, int mods);
         static void handleMousePosition(GLFWwindow* window, double xpos, double ypos);
-
     };
 }

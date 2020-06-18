@@ -7,9 +7,9 @@ set(GLFW_BUILD "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/glfw-3
 set(VULKAN_ROOT "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/Vulkan/1.2.135.0")
 set(VKW_ROOT "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/VulkanWrapper-master")
 set(VKW_BUILD "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/VulkanWrapper-master/build")
-set(VMA_INCLUDE "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/VulkanMemoryAllocator-master/src")
+set(VMA_INCLUDE "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/VulkanMemoryAllocator-2.3.0/src")
 set(GLM_INCLUDE "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/glm")
-set(ENTT_INCLUDE "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/entt-master/src")
+set(ENTT_INCLUDE "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/entt-master/src/")
 
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/glfw-3.3.2/docs" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/glfw-3.3.2/tests" FORCE)
@@ -19,6 +19,7 @@ add_subdirectory(${GLFW_ROOT} ${GLFW_BUILD} EXCLUDE_FROM_ALL)
 
 add_library("Engine"
     "Header Files/Math.h"
+    "Source Files/Math.cpp"
     "Source Files/vma.cpp"
     "Header Files/Engine.h"
     "Source Files/Engine.cpp"
@@ -58,7 +59,21 @@ add_library("Engine"
     "Source Files/Input.cpp"
     "Header Files/Image.h"
     "Source Files/Image.cpp"
- "Header Files/DirectedAcyclicGraph.h")
+    "Header Files/BlockingQueue.h"
+    "Header Files/BufferedQueue.h"
+    "Header Files/FreeListAllocator.h"
+    "Source Files/FreeListAllocator.cpp"
+    "Header Files/DirectedAcyclicGraph.h"
+    "Header Files/BlockingQueue.h"
+    "Header Files/BufferedQueue.h"
+    "Header Files/FreeListAllocator.h"
+    "Source Files/FreeListAllocator.cpp"
+    "Header Files/Console.h"
+    "Source Files/Console.cpp"
+    "Header Files/AddTimestamp.h"
+    "Source Files/AddTimestamp.cpp"
+    
+ )
 
 target_compile_definitions("Engine" PUBLIC
     GLM_FORCE_RADIANS

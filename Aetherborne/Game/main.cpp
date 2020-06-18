@@ -1,6 +1,5 @@
 /*// IMPORT VULKAN
-#define GLFW_INCLUDE_VULKAN
-#include <GLFW/glfw3.h>
+
 
 // IMPORT GLM
 #define GLM_FORCE_RADIANS
@@ -10,14 +9,11 @@
 
 // IMPORT ENGINE CLASSES
 #include <../../Engine/Header Files/Engine.h>
+#include "../../Engine/Header Files/Console.h"
 #include <../../Engine/RenderGraph/AcquireNode.h>
 #include <../../Engine/RenderGraph/PresentNode.h>
 #include <../../Engine/Header Files/CameraSystem.h>
 #include <entt/entt.hpp>
-
-#include "../../Engine/Header Files/ConsoleGUI.h"
-#include "../../Engine/Header Files/Console.h"
-#include "../../Engine/Header Files/AddTimestamp.h"
 
 // IMPORT GAME CLASSES
 #include "Header Files/FramerateCounter.h"
@@ -26,71 +22,105 @@
 #include "Header Files/Chunk.h"
 #include "Header Files/ChunkMesh.h"
 #include "Header Files/ChunkUpdater.h"
+#include "Header Files/ChunkMesher.h"
+#include "Header Files/ChunkManager.h"
+#include "Header Files/BlockManager.h"
+#include "Header Files/TerrainGenerator.h"
+#include "Header Files/MeshManager.h"
+//#include "Header Files/TextureManager.h"
+//#include "SkyboxManager.h"
+//#include "Header Files/SelectionBox.h"
 
 // GENERAL IMPORTS
 #include <iostream>
-#include <thread>
-
 
 using namespace Aetherborne;
-
-// Console function to run in thread alongside main game window.
-void console_thread() {
-
-    //Console console;
-    //ConsoleGUI consoleGUI;
-
-    // Attach timestamps to iostream -- attaches to every newline. Only call once.
-    //AddTimestamp ats(std::cout);
-
-    // RedirectIOToConsole redirects functions like printf straight to the console. Only call once.
-    //consoleGUI.RedirectIOToConsole();
-
-    // Console input -------------------------------
-    /*while (console.isActive()) {
-        std::string cmd = console.getInput();
-        if (cmd != "") console.parseCommand(cmd);
-    }*/
-
-}
 
 
 int main() {
 
-    // Start the console thread.
-    //std::thread consoleObj(console_thread);
+    Aetherborne::Engine engine;
+    Aetherborne::Window window(800, 600, "Aetherborne");
+    engine.addWindow(window);
 
+    Aetherborne::Graphics& graphics = engine.getGraphics();
+    graphics.pickPhysicalDevice(window);
 
-    // Check extensions for Vulkan.
-    //uint32_t extensionCount = 0;
-    //vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, nullptr);
-    //std::cout << extensionCount << " extensions supported." << std::endl;
+    Aetherborne::Console console;
+    console.run();
 
+    Aetherborne::RenderGraph renderGraph(graphics.device(), 2);
+    engine.setRenderGraph(renderGraph);
 
-    while (true) {
+    FramerateCounter counter(window, "Aetherborne");
+    engine.getUpdateGroup().add(counter, 0);
 
-    }
-    
-    /*glfwInit();
+    Aetherborne::Camera camera(engine, window.getFramebufferWidth(), window.getFramebufferHeight(), glm::radians(90.0f), 0.01f, 1000.0f);
+    Aetherborne::CameraSystem cameraSystem(engine);
+    cameraSystem.setCamera(camera);
+    engine.getUpdateGroup().add(cameraSystem, 90);
+    std::cout << "cameraSystem added to systems." << std::endl;
 
-    glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
-    GLFWwindow* window = glfwCreateWindow(800, 600, "Vulkan window", nullptr, nullptr);
+    window.onFramebufferResized().connect<&Aetherborne::Camera::setSize>(&camera);
 
-    
+    MeshManager meshManager(engine);
+    //SkyboxManager skyboxManager(engine, cameraSystem);
+    //SelectionBox selectionBox(engine, cameraSystem);
+    //TextureManager textureManager(engine);
+    BlockManager blockManager;
+    World world(blockManager);
 
-    glm::mat4 matrix;
-    glm::vec4 vec;
-    auto test = matrix * vec;
+    FreeCam freeCam(camera, window.input(), world, blockManager/*, selectionBox*/);
+    engine.getUpdateGroup().add(freeCam, 10);
+    std::cout << "freeCam added to systems." << std::endl;
 
-    while (!glfwWindowShouldClose(window)) {
-        glfwPollEvents();
-    }
+    freeCam.setPosition({ 0, 80, 0 });
 
-    glfwDestroyWindow(window);
+    ChunkManager chunkManager(world, freeCam, 16);
+    engine.getUpdateGroup().add(chunkManager, 20);
+    std::cout << "chunkManager added to systems." << std::endl;
 
-    glfwTerminate();*/
+    TerrainGenerator terrainGenerator(world, chunkManager);
+    terrainGenerator.run();
+    std::cout << "terrainGenerator running." << std::endl;
 
+    ChunkUpdater chunkUpdater(engine, world, blockManager, chunkManager);
+    chunkUpdater.run();
+    std::cout << "chunkUpdater running." << std::endl;
 
+    ChunkMesher chunkMesher(engine, world, blockManager, meshManager);
+    engine.getUpdateGroup().add(chunkMesher, 30);
+    chunkMesher.run();
+    std::cout << "chunkMesher running." << std::endl;
+
+    chunkManager.setTerrainGenerator(terrainGenerator);
+    chunkManager.setChunkUpdater(chunkUpdater);
+    chunkManager.setChunkMesher(chunkMesher);
+
+    Renderer renderer(engine, renderGraph, cameraSystem, world,/* textureManager, skyboxManager, selectionBox,*/ meshManager);
+    engine.getUpdateGroup().add(renderer, 100);
+    std::cout << "renderer added to systems." << std::endl;
+
+    meshManager.setTransferNode(renderer.transferNode());
+    cameraSystem.setTransferNode(renderer.transferNode());
+    chunkMesher.setTransferNode(renderer.transferNode());
+    //textureManager.createTexture(renderer.transferNode(), renderer.mipmapGenerator());
+    //skyboxManager.transfer(renderer.transferNode());
+    //skyboxManager.createPipeline(renderer.chunkRenderer().renderPass());
+    //selectionBox.transfer(renderer.transferNode());
+    //selectionBox.createMesh(renderer.transferNode(), meshManager);
+    //selectionBox.createPipeline(renderer.chunkRenderer().renderPass());
+    std::cout << "Transfer nodes set." << std::endl;
+
+    engine.run();
+
+    terrainGenerator.stop();
+    chunkUpdater.stop();
+    chunkMesher.stop();
+    renderer.wait();
+
+    std::cout << "Processes stopped." << std::endl;
+    console.stop();
 
     return 0;
 }

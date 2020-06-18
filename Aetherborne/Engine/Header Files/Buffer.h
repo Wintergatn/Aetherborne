@@ -6,23 +6,34 @@
 
 namespace Aetherborne {
 
-	class Engine;
+    class Engine;
 
-	class Buffer {
+    struct BufferState {
+        Engine* engine;
+        vk::Buffer buffer;
+        VmaAllocation allocation;
 
-	public:
-		Buffer(Engine& engine, const vk::BufferCreateInfo& info, const VmaAllocationCreateInfo& allocInfo);
-		~Buffer();
+        BufferState(Engine* engine, vk::Buffer&& buffer, VmaAllocation allocation);
+        BufferState(const BufferState& other) = delete;
+        BufferState& operator = (const BufferState& other) = delete;
+        BufferState(BufferState&& other);
+        BufferState& operator = (BufferState&& other);
+        ~BufferState();
+    };
 
-		vk::Buffer& buffer() const { return *m_buffer; }
-		void* getMapping() const;
-		size_t size() const { return m_buffer->size(); }
+    class Buffer {
 
-	private:
-		Engine* m_engine;
-		std::unique_ptr<vk::Buffer> m_buffer;
-		VmaAllocation m_allocation;
-		VmaAllocationInfo m_allocationInfo;
+    public:
+        Buffer(Engine& engine, const vk::BufferCreateInfo& info, const VmaAllocationCreateInfo& allocInfo);
+        ~Buffer();
 
-	};
+        vk::Buffer& buffer() const { return m_bufferState->buffer; }
+        void* getMapping() const;
+        size_t size() const { return m_bufferState->buffer.size(); }
+
+    private:
+        Engine* m_engine;
+        std::unique_ptr<BufferState> m_bufferState;
+        VmaAllocationInfo m_allocationInfo;
+    };
 }

@@ -6,16 +6,19 @@
 
 namespace Aetherborne {
 
-	class TransferNode : public RenderGraph::Node {
-
+    class TransferNode : public RenderGraph::Node {
     public:
         TransferNode(Engine& engine, RenderGraph& graph);
+
+        RenderGraph::BufferUsage& bufferUsage() const { return *m_bufferUsage; }
+        RenderGraph::ImageUsage& imageUsage() const { return *m_imageUsage; }
 
         void preRender(uint32_t currentFrame);
         void render(uint32_t currentFrame, vk::CommandBuffer& commandBuffer);
         void postRender(uint32_t currentFrame) {}
 
-        void transfer(std::shared_ptr<Aetherborne::Buffer> buffer, vk::DeviceSize size, vk::DeviceSize offset, void* data);
+        void transfer(Buffer& buffer, vk::DeviceSize size, vk::DeviceSize offset, const void* data);
+        void transfer(Image& image, vk::Offset3D offset, vk::Extent3D extent, vk::ImageSubresourceLayers subresourceLayers, const void* data);
 
     private:
         struct BufferInfo {
@@ -23,23 +26,36 @@ namespace Aetherborne {
             vk::BufferCopy copy;
         };
 
-        struct SyncItem {
-            std::shared_ptr<Buffer> buffer;
+        struct SyncBuffer {
+            Buffer* buffer;
             vk::DeviceSize size;
             vk::DeviceSize offset;
         };
 
+        struct ImageInfo {
+            const vk::Image* image;
+            vk::BufferImageCopy copy;
+        };
+
+        struct SyncImage {
+            Image* image;
+            vk::DeviceSize size;
+            vk::ImageSubresourceLayers subresourceLayers;
+        };
+
         Aetherborne::Engine* m_engine;
         Aetherborne::RenderGraph* m_renderGraph;
+        std::unique_ptr<RenderGraph::BufferUsage> m_bufferUsage;
+        std::unique_ptr<RenderGraph::ImageUsage> m_imageUsage;
         std::vector<std::unique_ptr<Aetherborne::Buffer>> m_stagingBuffers;
         std::vector<void*> m_stagingBufferPtrs;
         std::vector<BufferInfo> m_bufferCopies;
-        std::queue<SyncItem> m_syncQueue;
+        std::queue<SyncBuffer> m_syncBufferQueue;
+        std::vector<ImageInfo> m_imageCopies;
+        std::queue<SyncImage> m_syncImageQueue;
         bool m_preRenderDone = false;
         size_t m_ptr = 0;
 
         void createStaging();
-
-	};
-
+    };
 }

@@ -3,9 +3,21 @@ cmake_minimum_required (VERSION 3.8)
 project ("Game")
 
 set(GLSL_COMPILER "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/Vulkan/1.2.135.0/Bin/glslc.exe")
+set(STB_INCLUDE "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/stb-master")
+set(FASTNOISE_ROOT "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/FastNoise-master")
+
+add_library("FastNoise"
+    ${FASTNOISE_ROOT}/FastNoise.h
+    ${FASTNOISE_ROOT}/FastNoise.cpp
+)
 
 add_executable("Game"
     main.cpp
+    "Header Files/World.h"
+    "Source Files/World.cpp"
+    "Source Files/ChunkMesher.cpp"
+    "Header Files/ChunkManager.h"
+    "Source Files/stb.cpp"
     "Header Files/FramerateCounter.h"
     "Source Files/FramerateCounter.cpp"
     "Header Files/Renderer.h"
@@ -20,10 +32,26 @@ add_executable("Game"
     "Source Files/ChunkMesh.cpp"
     "Header Files/ChunkUpdater.h"
     "Source Files/ChunkUpdater.cpp"
+    "Header Files/ChunkMesher.h"
+    "Source Files/ChunkManager.cpp"
+    "Header Files/BlockManager.h"
+    "Source Files/BlockManager.cpp"
+    "Header Files/TerrainGenerator.h"
+    "Source Files/TerrainGenerator.cpp"
+    "Header Files/MeshManager.h"
+    "Source Files/MeshManager.cpp"
+    "Header Files/PriorityQueue.h"
+    "Source Files/PriorityQueue.cpp"
 )
 
 target_link_libraries("Game"
     "Engine"
+    "FastNoise"
+)
+
+target_include_directories("Game"
+    PRIVATE ${STB_INCLUDE}
+    PRIVATE ${FASTNOISE_ROOT}
 )
 
 set(SHADER_SOURCES

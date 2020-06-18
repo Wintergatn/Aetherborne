@@ -1,15 +1,10 @@
 #include "../Header Files/ConsoleGUI.h"
 
-#include <Windows.h>
-#include <stdio.h>
-#include <fcntl.h>
-#include <io.h>
-#include <iostream>
-#include <fstream>
+
 
 using namespace Aetherborne;
 
-static const WORD MAX_CONSOLE_LINES = 500;
+
 
 void ConsoleGUI::RedirectIOToConsole() {
 	int hConHandle;
@@ -18,7 +13,7 @@ void ConsoleGUI::RedirectIOToConsole() {
 	FILE* fp;
 
 	//allocate a console for this app
-	AllocConsole();
+	
 
 	//set screen buffer to be big enough to scroll through text
 	GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &coninfo);
@@ -53,10 +48,3 @@ void ConsoleGUI::RedirectIOToConsole() {
 	std::ios::sync_with_stdio();
 }
 
-/*
-// Needed for coloring text
-WORD GetConsoleTextAttribute(HANDLE hCon) {
-	CONSOLE_SCREEN_BUFFER_INFO con_info;
-	GetConsoleScreenBufferInfo(hCon, &con_info);
-	return con_info.wAttributes;
-}*/

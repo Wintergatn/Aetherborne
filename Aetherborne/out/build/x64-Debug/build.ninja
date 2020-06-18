@@ -101,10 +101,19 @@ build list_install_components: phony
 
 build cmake_object_order_depends_target_Engine_Debug: phony || Engine\CMakeFiles\Engine.dir
 
+build Engine\CMakeFiles\Engine.dir\Source_Files\Math.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Math.cpp || cmake_object_order_depends_target_Engine_Debug
+  DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  OBJECT_DIR = Engine\CMakeFiles\Engine.dir
+  OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
+  TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
+  TARGET_PDB = Engine\Engine.pdb
+
 build Engine\CMakeFiles\Engine.dir\Source_Files\vma.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\vma.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -113,7 +122,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\vma.cpp.obj: CXX_COMPILER__Engin
 build Engine\CMakeFiles\Engine.dir\Source_Files\Engine.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Engine.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -122,7 +131,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Engine.cpp.obj: CXX_COMPILER__En
 build Engine\CMakeFiles\Engine.dir\Source_Files\Window.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Window.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -131,7 +140,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Window.cpp.obj: CXX_COMPILER__En
 build Engine\CMakeFiles\Engine.dir\Source_Files\System.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\System.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -140,7 +149,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\System.cpp.obj: CXX_COMPILER__En
 build Engine\CMakeFiles\Engine.dir\Source_Files\Clock.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Clock.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -149,7 +158,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Clock.cpp.obj: CXX_COMPILER__Eng
 build Engine\CMakeFiles\Engine.dir\Source_Files\Graphics.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Graphics.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -158,7 +167,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Graphics.cpp.obj: CXX_COMPILER__
 build Engine\CMakeFiles\Engine.dir\Source_Files\MemoryManager.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\MemoryManager.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -167,7 +176,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\MemoryManager.cpp.obj: CXX_COMPI
 build Engine\CMakeFiles\Engine.dir\Source_Files\Buffer.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Buffer.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -176,7 +185,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Buffer.cpp.obj: CXX_COMPILER__En
 build Engine\CMakeFiles\Engine.dir\Source_Files\Mesh.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Mesh.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -185,7 +194,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Mesh.cpp.obj: CXX_COMPILER__Engi
 build Engine\CMakeFiles\Engine.dir\RenderGraph\RenderGraph.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\RenderGraph\RenderGraph.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\RenderGraph
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -194,7 +203,7 @@ build Engine\CMakeFiles\Engine.dir\RenderGraph\RenderGraph.cpp.obj: CXX_COMPILER
 build Engine\CMakeFiles\Engine.dir\RenderGraph\AcquireNode.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\RenderGraph\AcquireNode.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\RenderGraph
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -203,7 +212,7 @@ build Engine\CMakeFiles\Engine.dir\RenderGraph\AcquireNode.cpp.obj: CXX_COMPILER
 build Engine\CMakeFiles\Engine.dir\RenderGraph\PresentNode.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\RenderGraph\PresentNode.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\RenderGraph
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -212,7 +221,7 @@ build Engine\CMakeFiles\Engine.dir\RenderGraph\PresentNode.cpp.obj: CXX_COMPILER
 build Engine\CMakeFiles\Engine.dir\RenderGraph\TransferNode.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\RenderGraph\TransferNode.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\RenderGraph
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -221,7 +230,7 @@ build Engine\CMakeFiles\Engine.dir\RenderGraph\TransferNode.cpp.obj: CXX_COMPILE
 build Engine\CMakeFiles\Engine.dir\Source_Files\Utilities.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Utilities.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -230,7 +239,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Utilities.cpp.obj: CXX_COMPILER_
 build Engine\CMakeFiles\Engine.dir\Source_Files\UniformWriter.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\UniformWriter.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -239,7 +248,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\UniformWriter.cpp.obj: CXX_COMPI
 build Engine\CMakeFiles\Engine.dir\Source_Files\BufferWriter.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\BufferWriter.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -248,7 +257,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\BufferWriter.cpp.obj: CXX_COMPIL
 build Engine\CMakeFiles\Engine.dir\Source_Files\Camera.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Camera.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -257,7 +266,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Camera.cpp.obj: CXX_COMPILER__En
 build Engine\CMakeFiles\Engine.dir\Source_Files\CameraSystem.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\CameraSystem.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -266,7 +275,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\CameraSystem.cpp.obj: CXX_COMPIL
 build Engine\CMakeFiles\Engine.dir\Source_Files\Input.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Input.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -275,7 +284,34 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Input.cpp.obj: CXX_COMPILER__Eng
 build Engine\CMakeFiles\Engine.dir\Source_Files\Image.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Image.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  OBJECT_DIR = Engine\CMakeFiles\Engine.dir
+  OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
+  TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
+  TARGET_PDB = Engine\Engine.pdb
+
+build Engine\CMakeFiles\Engine.dir\Source_Files\FreeListAllocator.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\FreeListAllocator.cpp || cmake_object_order_depends_target_Engine_Debug
+  DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  OBJECT_DIR = Engine\CMakeFiles\Engine.dir
+  OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
+  TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
+  TARGET_PDB = Engine\Engine.pdb
+
+build Engine\CMakeFiles\Engine.dir\Source_Files\Console.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Console.cpp || cmake_object_order_depends_target_Engine_Debug
+  DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  OBJECT_DIR = Engine\CMakeFiles\Engine.dir
+  OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
+  TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
+  TARGET_PDB = Engine\Engine.pdb
+
+build Engine\CMakeFiles\Engine.dir\Source_Files\AddTimestamp.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\AddTimestamp.cpp || cmake_object_order_depends_target_Engine_Debug
+  DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -289,7 +325,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Image.cpp.obj: CXX_COMPILER__Eng
 #############################################
 # Link the static library Engine\Engine.lib
 
-build Engine\Engine.lib: CXX_STATIC_LIBRARY_LINKER__Engine_Debug Engine\CMakeFiles\Engine.dir\Source_Files\vma.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Engine.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Window.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\System.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Clock.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Graphics.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\MemoryManager.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Buffer.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Mesh.cpp.obj Engine\CMakeFiles\Engine.dir\RenderGraph\RenderGraph.cpp.obj Engine\CMakeFiles\Engine.dir\RenderGraph\AcquireNode.cpp.obj Engine\CMakeFiles\Engine.dir\RenderGraph\PresentNode.cpp.obj Engine\CMakeFiles\Engine.dir\RenderGraph\TransferNode.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Utilities.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\UniformWriter.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\BufferWriter.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Camera.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\CameraSystem.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Input.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Image.cpp.obj
+build Engine\Engine.lib: CXX_STATIC_LIBRARY_LINKER__Engine_Debug Engine\CMakeFiles\Engine.dir\Source_Files\Math.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\vma.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Engine.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Window.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\System.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Clock.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Graphics.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\MemoryManager.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Buffer.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Mesh.cpp.obj Engine\CMakeFiles\Engine.dir\RenderGraph\RenderGraph.cpp.obj Engine\CMakeFiles\Engine.dir\RenderGraph\AcquireNode.cpp.obj Engine\CMakeFiles\Engine.dir\RenderGraph\PresentNode.cpp.obj Engine\CMakeFiles\Engine.dir\RenderGraph\TransferNode.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Utilities.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\UniformWriter.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\BufferWriter.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Camera.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\CameraSystem.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Input.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Image.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\FreeListAllocator.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\Console.cpp.obj Engine\CMakeFiles\Engine.dir\Source_Files\AddTimestamp.cpp.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
@@ -649,27 +685,88 @@ build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\buil
 # =============================================================================
 
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target FastNoise
+
+
+#############################################
+# Order-only phony target for FastNoise
+
+build cmake_object_order_depends_target_FastNoise_Debug: phony || Game\CMakeFiles\FastNoise.dir
+
+build Game\CMakeFiles\FastNoise.dir\C_\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master\FastNoise.cpp.obj: CXX_COMPILER__FastNoise_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master\FastNoise.cpp || cmake_object_order_depends_target_FastNoise_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = Game\CMakeFiles\FastNoise.dir
+  OBJECT_FILE_DIR = Game\CMakeFiles\FastNoise.dir\C_\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master
+  TARGET_COMPILE_PDB = Game\CMakeFiles\FastNoise.dir\FastNoise.pdb
+  TARGET_PDB = Game\FastNoise.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target FastNoise
+
+
+#############################################
+# Link the static library Game\FastNoise.lib
+
+build Game\FastNoise.lib: CXX_STATIC_LIBRARY_LINKER__FastNoise_Debug Game\CMakeFiles\FastNoise.dir\C_\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master\FastNoise.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = Game\CMakeFiles\FastNoise.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = Game\CMakeFiles\FastNoise.dir\FastNoise.pdb
+  TARGET_FILE = Game\FastNoise.lib
+  TARGET_PDB = Game\FastNoise.pdb
+
+# =============================================================================
 # Object build statements for EXECUTABLE target Game
 
 
 #############################################
 # Order-only phony target for Game
 
-build cmake_object_order_depends_target_Game_Debug: phony || Game\CompileShaders cmake_object_order_depends_target_Engine_Debug
+build cmake_object_order_depends_target_Game_Debug: phony || Game\CompileShaders cmake_object_order_depends_target_Engine_Debug cmake_object_order_depends_target_FastNoise_Debug
 
 build Game\CMakeFiles\Game.dir\main.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\main.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir
+  TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
+  TARGET_PDB = Game\Game.pdb
+
+build Game\CMakeFiles\Game.dir\Source_Files\World.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\World.cpp || cmake_object_order_depends_target_Game_Debug
+  DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  OBJECT_DIR = Game\CMakeFiles\Game.dir
+  OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
+  TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
+  TARGET_PDB = Game\Game.pdb
+
+build Game\CMakeFiles\Game.dir\Source_Files\ChunkMesher.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\ChunkMesher.cpp || cmake_object_order_depends_target_Game_Debug
+  DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  OBJECT_DIR = Game\CMakeFiles\Game.dir
+  OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
+  TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
+  TARGET_PDB = Game\Game.pdb
+
+build Game\CMakeFiles\Game.dir\Source_Files\stb.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\stb.cpp || cmake_object_order_depends_target_Game_Debug
+  DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  OBJECT_DIR = Game\CMakeFiles\Game.dir
+  OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
   TARGET_PDB = Game\Game.pdb
 
 build Game\CMakeFiles\Game.dir\Source_Files\FramerateCounter.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\FramerateCounter.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -678,7 +775,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\FramerateCounter.cpp.obj: CXX_COMPIL
 build Game\CMakeFiles\Game.dir\Source_Files\Renderer.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\Renderer.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -687,7 +784,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\Renderer.cpp.obj: CXX_COMPILER__Game
 build Game\CMakeFiles\Game.dir\Source_Files\FreeCam.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\FreeCam.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -696,7 +793,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\FreeCam.cpp.obj: CXX_COMPILER__Game_
 build Game\CMakeFiles\Game.dir\Source_Files\Chunk.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\Chunk.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -705,7 +802,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\Chunk.cpp.obj: CXX_COMPILER__Game_De
 build Game\CMakeFiles\Game.dir\Source_Files\ChunkRenderer.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\ChunkRenderer.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -714,7 +811,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\ChunkRenderer.cpp.obj: CXX_COMPILER_
 build Game\CMakeFiles\Game.dir\Source_Files\ChunkMesh.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\ChunkMesh.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -723,7 +820,52 @@ build Game\CMakeFiles\Game.dir\Source_Files\ChunkMesh.cpp.obj: CXX_COMPILER__Gam
 build Game\CMakeFiles\Game.dir\Source_Files\ChunkUpdater.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\ChunkUpdater.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-master\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  OBJECT_DIR = Game\CMakeFiles\Game.dir
+  OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
+  TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
+  TARGET_PDB = Game\Game.pdb
+
+build Game\CMakeFiles\Game.dir\Source_Files\ChunkManager.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\ChunkManager.cpp || cmake_object_order_depends_target_Game_Debug
+  DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  OBJECT_DIR = Game\CMakeFiles\Game.dir
+  OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
+  TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
+  TARGET_PDB = Game\Game.pdb
+
+build Game\CMakeFiles\Game.dir\Source_Files\BlockManager.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\BlockManager.cpp || cmake_object_order_depends_target_Game_Debug
+  DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  OBJECT_DIR = Game\CMakeFiles\Game.dir
+  OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
+  TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
+  TARGET_PDB = Game\Game.pdb
+
+build Game\CMakeFiles\Game.dir\Source_Files\TerrainGenerator.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\TerrainGenerator.cpp || cmake_object_order_depends_target_Game_Debug
+  DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  OBJECT_DIR = Game\CMakeFiles\Game.dir
+  OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
+  TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
+  TARGET_PDB = Game\Game.pdb
+
+build Game\CMakeFiles\Game.dir\Source_Files\MeshManager.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\MeshManager.cpp || cmake_object_order_depends_target_Game_Debug
+  DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  OBJECT_DIR = Game\CMakeFiles\Game.dir
+  OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
+  TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
+  TARGET_PDB = Game\Game.pdb
+
+build Game\CMakeFiles\Game.dir\Source_Files\PriorityQueue.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\PriorityQueue.cpp || cmake_object_order_depends_target_Game_Debug
+  DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
+  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -737,10 +879,10 @@ build Game\CMakeFiles\Game.dir\Source_Files\ChunkUpdater.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable Game\Game.exe
 
-build Game\Game.exe: CXX_EXECUTABLE_LINKER__Game_Debug Game\CMakeFiles\Game.dir\main.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\FramerateCounter.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\Renderer.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\FreeCam.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\Chunk.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkRenderer.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkMesh.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkUpdater.cpp.obj | Engine\Engine.lib C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\Debug\glfw3.lib C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\build\src\Debug\VulkanWrapper.lib C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Lib\vulkan-1.lib || Engine\Engine.lib Game\CompileShaders
+build Game\Game.exe: CXX_EXECUTABLE_LINKER__Game_Debug Game\CMakeFiles\Game.dir\main.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\World.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkMesher.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\stb.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\FramerateCounter.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\Renderer.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\FreeCam.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\Chunk.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkRenderer.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkMesh.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkUpdater.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkManager.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\BlockManager.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\TerrainGenerator.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\MeshManager.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\PriorityQueue.cpp.obj | Engine\Engine.lib Game\FastNoise.lib C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\Debug\glfw3.lib C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\build\src\Debug\VulkanWrapper.lib C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Lib\vulkan-1.lib || Engine\Engine.lib Game\CompileShaders Game\FastNoise.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = Engine\Engine.lib  C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\Debug\glfw3.lib  C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\build\src\Debug\VulkanWrapper.lib  C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Lib\vulkan-1.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = Engine\Engine.lib  Game\FastNoise.lib  C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\Debug\glfw3.lib  C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\build\src\Debug\VulkanWrapper.lib  C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Lib\vulkan-1.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -841,6 +983,10 @@ build Engine: phony Engine\Engine.lib
 
 build Engine.lib: phony Engine\Engine.lib
 
+build FastNoise: phony Game\FastNoise.lib
+
+build FastNoise.lib: phony Game\FastNoise.lib
+
 build Game: phony Game\Game.exe
 
 build Game.exe: phony Game\Game.exe
@@ -873,7 +1019,7 @@ build Engine\all: phony Engine\Engine.lib
 #############################################
 # Folder: C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/Game
 
-build Game\all: phony Game\Game.exe
+build Game\all: phony Game\FastNoise.lib Game\Game.exe
 
 # =============================================================================
 

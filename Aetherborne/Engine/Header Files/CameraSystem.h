@@ -7,9 +7,12 @@
 
 namespace Aetherborne {
 
-	class CameraSystem : public Aetherborne::System {
+    class CameraSystem : public Aetherborne::System {
 
-        CameraSystem(Engine& engine, uint32_t priority);
+    public:
+        CameraSystem(Engine& engine);
+
+        Camera& camera() const { return *m_camera; }
 
         const vk::DescriptorSetLayout& descriptorLayout() const { return *m_descriptorSetLayout; }
         const vk::DescriptorSet& descriptorSet() const { return *m_descriptorSet; }
@@ -37,6 +40,5 @@ namespace Aetherborne {
         void writeDescriptorSet();
 
         void updateUniform();
-
-	};
+    };
 }

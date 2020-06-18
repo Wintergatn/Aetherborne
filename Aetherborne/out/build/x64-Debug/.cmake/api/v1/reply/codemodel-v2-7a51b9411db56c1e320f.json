@@ -54,7 +54,7 @@
 					"source" : "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/glfw-3.3.2",
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				},
 				{
@@ -69,7 +69,7 @@
 					"source" : "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/glfw-3.3.2/src",
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				},
 				{
@@ -84,7 +84,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -129,8 +130,8 @@
 					"parentIndex" : 1,
 					"targetIndexes" : 
 					[
-						3,
-						4
+						4,
+						5
 					]
 				},
 				{
@@ -143,7 +144,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -152,21 +154,28 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "CompileShaders::@971b28586fb25e7ff763",
-					"jsonFile" : "target-CompileShaders-Debug-07c90c8addd7cba6f2b2.json",
+					"jsonFile" : "target-CompileShaders-Debug-120530554a01b45e6550.json",
 					"name" : "CompileShaders",
 					"projectIndex" : 3
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "Engine::@8f69bdd092c897d92c1e",
-					"jsonFile" : "target-Engine-Debug-282f584b7c4f8e2ae42c.json",
+					"jsonFile" : "target-Engine-Debug-a8000cf7c206c77a357f.json",
 					"name" : "Engine",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 4,
+					"id" : "FastNoise::@971b28586fb25e7ff763",
+					"jsonFile" : "target-FastNoise-Debug-3e7898eee75b5f357bc4.json",
+					"name" : "FastNoise",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
 					"id" : "Game::@971b28586fb25e7ff763",
-					"jsonFile" : "target-Game-Debug-f55fbb8949658ee009a5.json",
+					"jsonFile" : "target-Game-Debug-c0f5814433adf3f84edb.json",
 					"name" : "Game",
 					"projectIndex" : 3
 				},

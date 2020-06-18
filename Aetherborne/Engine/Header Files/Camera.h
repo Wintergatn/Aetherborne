@@ -5,10 +5,31 @@
 
 namespace Aetherborne {
 
-	class Engine;
+    class Engine;
 
-	class Camera {
+    struct Plane {
+        Plane() {}
+        Plane(glm::vec3 p0, glm::vec3 p1, glm::vec3 p2);
+        Plane(glm::vec4 plane);
 
+        glm::vec4 components;
+
+        float distance(glm::vec3 p);
+        //bool testAABB(glm::vec3 origin, glm::vec3 extent);
+    };
+
+    struct Frustum {
+        Plane near;
+        Plane far;
+        Plane left;
+        Plane right;
+        Plane top;
+        Plane bottom;
+
+        //bool testAABB(glm::vec3 origin, glm::vec3 extent);
+    };
+
+    class Camera {
     public:
         Camera(Engine& engine, uint32_t width, uint32_t height, float fov, float nearPlane, float farPlane);
 
@@ -19,6 +40,7 @@ namespace Aetherborne {
         float farPlane() const { return m_farPlane; }
         glm::mat4 viewMatrix() const { return m_viewMatrix; }
         glm::mat4 projectionMatrix() const { return m_projectionMatrix; }
+        Frustum frustum() const { return m_frustum; }
 
         void setSize(uint32_t width, uint32_t height);
         void setFOV(float value);
@@ -40,8 +62,10 @@ namespace Aetherborne {
         glm::vec3 m_position;
         glm::quat m_rotation;
         glm::mat4 m_viewMatrix;
+        Frustum m_frustum;
 
         void createProjectionMatrix();
         void createViewMatrix();
+        void createFrustum(glm::vec3 forward, glm::vec3 up, glm::vec3 right);
     };
 }
