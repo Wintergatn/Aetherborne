@@ -1,2 +1,2 @@
 # Aetherborne
-Vulkan C++ voxel engine. Newer version of AetherynEngine.
+Vulkan C++ voxel engine.

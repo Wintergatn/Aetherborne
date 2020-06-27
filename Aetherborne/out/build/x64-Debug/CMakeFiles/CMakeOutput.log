@@ -1,4 +1,4 @@
-The system is: Windows - 10.0.18362 - AMD64
+The system is: Windows - 10.0.19041 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/bin/HostX64/x64/cl.exe 
 Build flags: 
@@ -21,7 +21,7 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
 
-The C compiler identification is MSVC, found in "C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdC/CMakeCCompilerId.exe"
+The C compiler identification is MSVC, found in "C:/Users/nicho/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdC/CMakeCCompilerId.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/bin/HostX64/x64/cl.exe 
@@ -45,37 +45,37 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
 
-The CXX compiler identification is MSVC, found in "C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+The CXX compiler identification is MSVC, found in "C:/Users/nicho/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/nicho/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_c7532 && [1/2] Building C object CMakeFiles\cmTC_c7532.dir\testCCompiler.c.obj
-[2/2] Linking C executable cmTC_c7532.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_a260e && [1/2] Building C object CMakeFiles\cmTC_a260e.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_a260e.exe
 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/nicho/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_814f1 && [1/2] Building C object CMakeFiles\cmTC_814f1.dir\CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_814f1.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_64e22 && [1/2] Building C object CMakeFiles\cmTC_64e22.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_64e22.exe
 
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/nicho/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_bef26 && [1/2] Building CXX object CMakeFiles\cmTC_bef26.dir\testCXXCompiler.cxx.obj
-[2/2] Linking CXX executable cmTC_bef26.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_d4de2 && [1/2] Building CXX object CMakeFiles\cmTC_d4de2.dir\testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_d4de2.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/nicho/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_3d0fd && [1/2] Building CXX object CMakeFiles\cmTC_3d0fd.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_3d0fd.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_ce1d0 && [1/2] Building CXX object CMakeFiles\cmTC_ce1d0.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_ce1d0.exe
 
 
 

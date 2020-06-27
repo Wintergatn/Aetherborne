@@ -39,7 +39,7 @@ include rules.ninja
 # Utility command for install/local
 
 build CMakeFiles\install\local.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -51,7 +51,7 @@ build install\local: phony CMakeFiles\install\local.util
 # Utility command for install
 
 build CMakeFiles\install.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -63,7 +63,7 @@ build install: phony CMakeFiles\install.util
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -74,7 +74,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne -BC:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nicho\Desktop\Aetherborne\Aetherborne -BC:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -89,7 +89,7 @@ build list_install_components: phony
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/CMakeLists.txt
+# C:/Users/nicho/Desktop/Aetherborne/Aetherborne/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -104,7 +104,7 @@ build cmake_object_order_depends_target_Engine_Debug: phony || Engine\CMakeFiles
 build Engine\CMakeFiles\Engine.dir\Source_Files\Math.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Math.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -113,7 +113,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Math.cpp.obj: CXX_COMPILER__Engi
 build Engine\CMakeFiles\Engine.dir\Source_Files\vma.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\vma.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -122,7 +122,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\vma.cpp.obj: CXX_COMPILER__Engin
 build Engine\CMakeFiles\Engine.dir\Source_Files\Engine.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Engine.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -131,7 +131,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Engine.cpp.obj: CXX_COMPILER__En
 build Engine\CMakeFiles\Engine.dir\Source_Files\Window.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Window.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -140,7 +140,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Window.cpp.obj: CXX_COMPILER__En
 build Engine\CMakeFiles\Engine.dir\Source_Files\System.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\System.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -149,7 +149,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\System.cpp.obj: CXX_COMPILER__En
 build Engine\CMakeFiles\Engine.dir\Source_Files\Clock.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Clock.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -158,7 +158,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Clock.cpp.obj: CXX_COMPILER__Eng
 build Engine\CMakeFiles\Engine.dir\Source_Files\Graphics.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Graphics.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -167,7 +167,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Graphics.cpp.obj: CXX_COMPILER__
 build Engine\CMakeFiles\Engine.dir\Source_Files\MemoryManager.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\MemoryManager.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -176,7 +176,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\MemoryManager.cpp.obj: CXX_COMPI
 build Engine\CMakeFiles\Engine.dir\Source_Files\Buffer.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Buffer.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -185,7 +185,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Buffer.cpp.obj: CXX_COMPILER__En
 build Engine\CMakeFiles\Engine.dir\Source_Files\Mesh.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Mesh.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -194,7 +194,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Mesh.cpp.obj: CXX_COMPILER__Engi
 build Engine\CMakeFiles\Engine.dir\RenderGraph\RenderGraph.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\RenderGraph\RenderGraph.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\RenderGraph
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -203,7 +203,7 @@ build Engine\CMakeFiles\Engine.dir\RenderGraph\RenderGraph.cpp.obj: CXX_COMPILER
 build Engine\CMakeFiles\Engine.dir\RenderGraph\AcquireNode.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\RenderGraph\AcquireNode.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\RenderGraph
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -212,7 +212,7 @@ build Engine\CMakeFiles\Engine.dir\RenderGraph\AcquireNode.cpp.obj: CXX_COMPILER
 build Engine\CMakeFiles\Engine.dir\RenderGraph\PresentNode.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\RenderGraph\PresentNode.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\RenderGraph
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -221,7 +221,7 @@ build Engine\CMakeFiles\Engine.dir\RenderGraph\PresentNode.cpp.obj: CXX_COMPILER
 build Engine\CMakeFiles\Engine.dir\RenderGraph\TransferNode.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\RenderGraph\TransferNode.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\RenderGraph
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -230,7 +230,7 @@ build Engine\CMakeFiles\Engine.dir\RenderGraph\TransferNode.cpp.obj: CXX_COMPILE
 build Engine\CMakeFiles\Engine.dir\Source_Files\Utilities.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Utilities.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -239,7 +239,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Utilities.cpp.obj: CXX_COMPILER_
 build Engine\CMakeFiles\Engine.dir\Source_Files\UniformWriter.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\UniformWriter.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -248,7 +248,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\UniformWriter.cpp.obj: CXX_COMPI
 build Engine\CMakeFiles\Engine.dir\Source_Files\BufferWriter.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\BufferWriter.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -257,7 +257,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\BufferWriter.cpp.obj: CXX_COMPIL
 build Engine\CMakeFiles\Engine.dir\Source_Files\Camera.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Camera.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -266,7 +266,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Camera.cpp.obj: CXX_COMPILER__En
 build Engine\CMakeFiles\Engine.dir\Source_Files\CameraSystem.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\CameraSystem.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -275,7 +275,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\CameraSystem.cpp.obj: CXX_COMPIL
 build Engine\CMakeFiles\Engine.dir\Source_Files\Input.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Input.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -284,7 +284,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Input.cpp.obj: CXX_COMPILER__Eng
 build Engine\CMakeFiles\Engine.dir\Source_Files\Image.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Image.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -293,7 +293,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Image.cpp.obj: CXX_COMPILER__Eng
 build Engine\CMakeFiles\Engine.dir\Source_Files\FreeListAllocator.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\FreeListAllocator.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -302,7 +302,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\FreeListAllocator.cpp.obj: CXX_C
 build Engine\CMakeFiles\Engine.dir\Source_Files\Console.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\Console.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -311,7 +311,7 @@ build Engine\CMakeFiles\Engine.dir\Source_Files\Console.cpp.obj: CXX_COMPILER__E
 build Engine\CMakeFiles\Engine.dir\Source_Files\AddTimestamp.cpp.obj: CXX_COMPILER__Engine_Debug ..\..\..\Engine\Source$ Files\AddTimestamp.cpp || cmake_object_order_depends_target_Engine_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Engine\CMakeFiles\Engine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\Engine.dir\Source_Files
   TARGET_COMPILE_PDB = Engine\CMakeFiles\Engine.dir\Engine.pdb
@@ -340,7 +340,7 @@ build Engine\Engine.lib: CXX_STATIC_LIBRARY_LINKER__Engine_Debug Engine\CMakeFil
 # Utility command for install/local
 
 build Engine\CMakeFiles\install\local.util: CUSTOM_COMMAND Engine\all
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Engine && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Engine && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -352,7 +352,7 @@ build Engine\install\local: phony Engine\CMakeFiles\install\local.util
 # Utility command for install
 
 build Engine\CMakeFiles\install.util: CUSTOM_COMMAND Engine\all
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Engine && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Engine && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -364,7 +364,7 @@ build Engine\install: phony Engine\CMakeFiles\install.util
 # Utility command for edit_cache
 
 build Engine\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Engine && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Engine && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -375,7 +375,7 @@ build Engine\edit_cache: phony Engine\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build Engine\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Engine && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne -BC:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Engine && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nicho\Desktop\Aetherborne\Aetherborne -BC:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -390,91 +390,91 @@ build Engine\list_install_components: phony
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/Engine/CMakeLists.txt
+# C:/Users/nicho/Desktop/Aetherborne/Aetherborne/Engine/CMakeLists.txt
 # =============================================================================
 
 
 #############################################
 # Utility command for uninstall
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\uninstall: phony C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\uninstall
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\uninstall: phony C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\uninstall
 
 
 #############################################
 # Utility command for install/local
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\install\local.util: CUSTOM_COMMAND C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\all
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\install\local.util: CUSTOM_COMMAND C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\install\local: phony C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\install\local.util
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\install\local: phony C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\install\local.util
 
 
 #############################################
 # Utility command for install
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\install.util: CUSTOM_COMMAND C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\all
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\install.util: CUSTOM_COMMAND C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\install: phony C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\install.util
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\install: phony C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\install.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\edit_cache: phony C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\edit_cache.util
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\edit_cache: phony C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne -BC:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug"
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nicho\Desktop\Aetherborne\Aetherborne -BC:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\rebuild_cache: phony C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\rebuild_cache.util
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\rebuild_cache: phony C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\list_install_components: phony
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\list_install_components: phony
 
 
 #############################################
-# Custom command for C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\uninstall
+# Custom command for C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\uninstall
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\uninstall: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/glfw-3.3.2/build/cmake_uninstall.cmake"
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\CMakeFiles\uninstall: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/nicho/Desktop/AetherborneDocs/Libraries/glfw-3.3.2/build/cmake_uninstall.cmake"
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/glfw-3.3.2/CMakeLists.txt
+# C:/Users/nicho/Desktop/AetherborneDocs/Libraries/glfw-3.3.2/CMakeLists.txt
 # =============================================================================
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne -BC:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug"
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nicho\Desktop\Aetherborne\Aetherborne -BC:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\rebuild_cache: phony C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\rebuild_cache.util
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\rebuild_cache: phony C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target glfw
@@ -483,142 +483,142 @@ build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\buil
 #############################################
 # Order-only phony target for glfw
 
-build cmake_object_order_depends_target_glfw_Debug: phony || C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+build cmake_object_order_depends_target_glfw_Debug: phony || C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\context.c || cmake_object_order_depends_target_glfw_Debug
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\context.c || cmake_object_order_depends_target_glfw_Debug
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  OBJECT_FILE_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\init.c || cmake_object_order_depends_target_glfw_Debug
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\init.c || cmake_object_order_depends_target_glfw_Debug
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  OBJECT_FILE_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\input.c || cmake_object_order_depends_target_glfw_Debug
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\input.c || cmake_object_order_depends_target_glfw_Debug
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  OBJECT_FILE_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\monitor.c || cmake_object_order_depends_target_glfw_Debug
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\monitor.c || cmake_object_order_depends_target_glfw_Debug
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  OBJECT_FILE_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\vulkan.c || cmake_object_order_depends_target_glfw_Debug
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\vulkan.c || cmake_object_order_depends_target_glfw_Debug
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  OBJECT_FILE_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\window.c || cmake_object_order_depends_target_glfw_Debug
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\window.c || cmake_object_order_depends_target_glfw_Debug
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  OBJECT_FILE_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\win32_init.c || cmake_object_order_depends_target_glfw_Debug
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\win32_init.c || cmake_object_order_depends_target_glfw_Debug
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  OBJECT_FILE_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\win32_joystick.c || cmake_object_order_depends_target_glfw_Debug
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\win32_joystick.c || cmake_object_order_depends_target_glfw_Debug
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  OBJECT_FILE_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\win32_monitor.c || cmake_object_order_depends_target_glfw_Debug
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\win32_monitor.c || cmake_object_order_depends_target_glfw_Debug
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  OBJECT_FILE_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\win32_time.c || cmake_object_order_depends_target_glfw_Debug
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\win32_time.c || cmake_object_order_depends_target_glfw_Debug
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  OBJECT_FILE_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\win32_thread.c || cmake_object_order_depends_target_glfw_Debug
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\win32_thread.c || cmake_object_order_depends_target_glfw_Debug
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  OBJECT_FILE_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\win32_window.c || cmake_object_order_depends_target_glfw_Debug
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\win32_window.c || cmake_object_order_depends_target_glfw_Debug
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  OBJECT_FILE_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\wgl_context.c || cmake_object_order_depends_target_glfw_Debug
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\wgl_context.c || cmake_object_order_depends_target_glfw_Debug
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  OBJECT_FILE_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\egl_context.c || cmake_object_order_depends_target_glfw_Debug
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\egl_context.c || cmake_object_order_depends_target_glfw_Debug
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  OBJECT_FILE_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\osmesa_context.c || cmake_object_order_depends_target_glfw_Debug
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\osmesa_context.c || cmake_object_order_depends_target_glfw_Debug
   DEFINES = -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  OBJECT_FILE_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
 
 # =============================================================================
@@ -626,62 +626,62 @@ build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\buil
 
 
 #############################################
-# Link the static library C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.lib
+# Link the static library C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.lib
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.lib: C_STATIC_LIBRARY_LINKER__glfw_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\context.c.obj C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\init.c.obj C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\input.c.obj C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\monitor.c.obj C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\vulkan.c.obj C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\window.c.obj C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_init.c.obj C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_joystick.c.obj C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_monitor.c.obj C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_time.c.obj C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_thread.c.obj C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_window.c.obj C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\wgl_context.c.obj C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\egl_context.c.obj C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\osmesa_context.c.obj
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.lib: C_STATIC_LIBRARY_LINKER__glfw_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\context.c.obj C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\init.c.obj C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\input.c.obj C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\monitor.c.obj C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\vulkan.c.obj C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\window.c.obj C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_init.c.obj C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_joystick.c.obj C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_monitor.c.obj C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_time.c.obj C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_thread.c.obj C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\win32_window.c.obj C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\wgl_context.c.obj C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\egl_context.c.obj C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\osmesa_context.c.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64
-  OBJECT_DIR = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
+  OBJECT_DIR = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_FILE = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.lib
-  TARGET_PDB = C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
+  TARGET_COMPILE_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_FILE = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.lib
+  TARGET_PDB = C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.pdb
 
 
 #############################################
 # Utility command for install/local
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\install\local.util: CUSTOM_COMMAND C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\all
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\install\local.util: CUSTOM_COMMAND C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\install\local: phony C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\install\local.util
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\install\local: phony C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\install\local.util
 
 
 #############################################
 # Utility command for install
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\install.util: CUSTOM_COMMAND C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\all
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\install.util: CUSTOM_COMMAND C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\all
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\install: phony C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\install.util
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\install: phony C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\install.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\edit_cache: phony C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\edit_cache.util
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\edit_cache: phony C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\list_install_components: phony
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\list_install_components: phony
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/CMakeLists.txt
+# C:/Users/nicho/Desktop/Aetherborne/Aetherborne/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -693,10 +693,10 @@ build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\buil
 
 build cmake_object_order_depends_target_FastNoise_Debug: phony || Game\CMakeFiles\FastNoise.dir
 
-build Game\CMakeFiles\FastNoise.dir\C_\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master\FastNoise.cpp.obj: CXX_COMPILER__FastNoise_Debug C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master\FastNoise.cpp || cmake_object_order_depends_target_FastNoise_Debug
+build Game\CMakeFiles\FastNoise.dir\C_\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master\FastNoise.cpp.obj: CXX_COMPILER__FastNoise_Debug C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master\FastNoise.cpp || cmake_object_order_depends_target_FastNoise_Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   OBJECT_DIR = Game\CMakeFiles\FastNoise.dir
-  OBJECT_FILE_DIR = Game\CMakeFiles\FastNoise.dir\C_\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master
+  OBJECT_FILE_DIR = Game\CMakeFiles\FastNoise.dir\C_\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master
   TARGET_COMPILE_PDB = Game\CMakeFiles\FastNoise.dir\FastNoise.pdb
   TARGET_PDB = Game\FastNoise.pdb
 
@@ -708,7 +708,7 @@ build Game\CMakeFiles\FastNoise.dir\C_\Users\nicho\OneDrive\Desktop\AetherborneD
 #############################################
 # Link the static library Game\FastNoise.lib
 
-build Game\FastNoise.lib: CXX_STATIC_LIBRARY_LINKER__FastNoise_Debug Game\CMakeFiles\FastNoise.dir\C_\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master\FastNoise.cpp.obj
+build Game\FastNoise.lib: CXX_STATIC_LIBRARY_LINKER__FastNoise_Debug Game\CMakeFiles\FastNoise.dir\C_\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master\FastNoise.cpp.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = Game\CMakeFiles\FastNoise.dir
@@ -730,7 +730,7 @@ build cmake_object_order_depends_target_Game_Debug: phony || Game\CompileShaders
 build Game\CMakeFiles\Game.dir\main.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\main.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -739,7 +739,7 @@ build Game\CMakeFiles\Game.dir\main.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\G
 build Game\CMakeFiles\Game.dir\Source_Files\World.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\World.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -748,7 +748,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\World.cpp.obj: CXX_COMPILER__Game_De
 build Game\CMakeFiles\Game.dir\Source_Files\ChunkMesher.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\ChunkMesher.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -757,7 +757,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\ChunkMesher.cpp.obj: CXX_COMPILER__G
 build Game\CMakeFiles\Game.dir\Source_Files\stb.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\stb.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -766,7 +766,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\stb.cpp.obj: CXX_COMPILER__Game_Debu
 build Game\CMakeFiles\Game.dir\Source_Files\FramerateCounter.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\FramerateCounter.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -775,7 +775,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\FramerateCounter.cpp.obj: CXX_COMPIL
 build Game\CMakeFiles\Game.dir\Source_Files\Renderer.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\Renderer.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -784,7 +784,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\Renderer.cpp.obj: CXX_COMPILER__Game
 build Game\CMakeFiles\Game.dir\Source_Files\FreeCam.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\FreeCam.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -793,7 +793,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\FreeCam.cpp.obj: CXX_COMPILER__Game_
 build Game\CMakeFiles\Game.dir\Source_Files\Chunk.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\Chunk.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -802,7 +802,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\Chunk.cpp.obj: CXX_COMPILER__Game_De
 build Game\CMakeFiles\Game.dir\Source_Files\ChunkRenderer.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\ChunkRenderer.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -811,7 +811,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\ChunkRenderer.cpp.obj: CXX_COMPILER_
 build Game\CMakeFiles\Game.dir\Source_Files\ChunkMesh.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\ChunkMesh.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -820,7 +820,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\ChunkMesh.cpp.obj: CXX_COMPILER__Gam
 build Game\CMakeFiles\Game.dir\Source_Files\ChunkUpdater.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\ChunkUpdater.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -829,7 +829,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\ChunkUpdater.cpp.obj: CXX_COMPILER__
 build Game\CMakeFiles\Game.dir\Source_Files\ChunkManager.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\ChunkManager.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -838,7 +838,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\ChunkManager.cpp.obj: CXX_COMPILER__
 build Game\CMakeFiles\Game.dir\Source_Files\BlockManager.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\BlockManager.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -847,7 +847,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\BlockManager.cpp.obj: CXX_COMPILER__
 build Game\CMakeFiles\Game.dir\Source_Files\TerrainGenerator.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\TerrainGenerator.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -856,7 +856,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\TerrainGenerator.cpp.obj: CXX_COMPIL
 build Game\CMakeFiles\Game.dir\Source_Files\MeshManager.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\MeshManager.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -865,7 +865,7 @@ build Game\CMakeFiles\Game.dir\Source_Files\MeshManager.cpp.obj: CXX_COMPILER__G
 build Game\CMakeFiles\Game.dir\Source_Files\PriorityQueue.cpp.obj: CXX_COMPILER__Game_Debug ..\..\..\Game\Source$ Files\PriorityQueue.cpp || cmake_object_order_depends_target_Game_Debug
   DEFINES = -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DGLM_FORCE_RADIANS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
-  INCLUDES = -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\entt-master\src
+  INCLUDES = -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\stb-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\FastNoise-master -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\include -I..\..\..\Engine\.\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\include -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanMemoryAllocator-2.3.0\src -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\glm -IC:\Users\nicho\Desktop\AetherborneDocs\Libraries\entt-master\src
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   OBJECT_FILE_DIR = Game\CMakeFiles\Game.dir\Source_Files
   TARGET_COMPILE_PDB = Game\CMakeFiles\Game.dir\
@@ -879,10 +879,10 @@ build Game\CMakeFiles\Game.dir\Source_Files\PriorityQueue.cpp.obj: CXX_COMPILER_
 #############################################
 # Link the executable Game\Game.exe
 
-build Game\Game.exe: CXX_EXECUTABLE_LINKER__Game_Debug Game\CMakeFiles\Game.dir\main.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\World.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkMesher.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\stb.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\FramerateCounter.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\Renderer.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\FreeCam.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\Chunk.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkRenderer.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkMesh.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkUpdater.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkManager.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\BlockManager.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\TerrainGenerator.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\MeshManager.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\PriorityQueue.cpp.obj | Engine\Engine.lib Game\FastNoise.lib C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\Debug\glfw3.lib C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\build\src\Debug\VulkanWrapper.lib C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Lib\vulkan-1.lib || Engine\Engine.lib Game\CompileShaders Game\FastNoise.lib
+build Game\Game.exe: CXX_EXECUTABLE_LINKER__Game_Debug Game\CMakeFiles\Game.dir\main.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\World.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkMesher.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\stb.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\FramerateCounter.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\Renderer.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\FreeCam.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\Chunk.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkRenderer.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkMesh.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkUpdater.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\ChunkManager.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\BlockManager.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\TerrainGenerator.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\MeshManager.cpp.obj Game\CMakeFiles\Game.dir\Source_Files\PriorityQueue.cpp.obj | Engine\Engine.lib Game\FastNoise.lib C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\Debug\glfw3.lib C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\build\src\Debug\VulkanWrapper.lib C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Lib\vulkan-1.lib || Engine\Engine.lib Game\CompileShaders Game\FastNoise.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = Engine\Engine.lib  Game\FastNoise.lib  C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\Debug\glfw3.lib  C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\build\src\Debug\VulkanWrapper.lib  C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Lib\vulkan-1.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = Engine\Engine.lib  Game\FastNoise.lib  C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\Debug\glfw3.lib  C:\Users\nicho\Desktop\AetherborneDocs\Libraries\VulkanWrapper-master\build\src\Debug\VulkanWrapper.lib  C:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Lib\vulkan-1.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = Game\CMakeFiles\Game.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -902,7 +902,7 @@ build Game\CompileShaders: phony Game\CMakeFiles\CompileShaders Game\Shaders\sha
 # Utility command for install/local
 
 build Game\CMakeFiles\install\local.util: CUSTOM_COMMAND Game\all
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Game && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Game && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -914,7 +914,7 @@ build Game\install\local: phony Game\CMakeFiles\install\local.util
 # Utility command for install
 
 build Game\CMakeFiles\install.util: CUSTOM_COMMAND Game\all
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Game && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Game && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -926,7 +926,7 @@ build Game\install: phony Game\CMakeFiles\install.util
 # Utility command for edit_cache
 
 build Game\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Game && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Game && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -937,7 +937,7 @@ build Game\edit_cache: phony Game\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build Game\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Game && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne -BC:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Game && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\nicho\Desktop\Aetherborne\Aetherborne -BC:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -961,7 +961,7 @@ build Game\CMakeFiles\CompileShaders: phony Game\Shaders\shader.vert.spv Game\Sh
 # Custom command for Game\Shaders\shader.vert.spv
 
 build Game\Shaders\shader.vert.spv: CUSTOM_COMMAND ..\..\..\Game\Shaders\shader.vert
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Game && C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Bin\glslc.exe C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/Game/Shaders/shader.vert -o C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/Game/Shaders/shader.vert.spv"
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Game && C:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Bin\glslc.exe C:/Users/nicho/Desktop/Aetherborne/Aetherborne/Game/Shaders/shader.vert -o C:/Users/nicho/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/Game/Shaders/shader.vert.spv"
   DESC = Generating Shaders/shader.vert.spv
   restat = 1
 
@@ -970,7 +970,7 @@ build Game\Shaders\shader.vert.spv: CUSTOM_COMMAND ..\..\..\Game\Shaders\shader.
 # Custom command for Game\Shaders\shader.frag.spv
 
 build Game\Shaders\shader.frag.spv: CUSTOM_COMMAND ..\..\..\Game\Shaders\shader.frag
-  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\OneDrive\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Game && C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Bin\glslc.exe C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/Game/Shaders/shader.frag -o C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/Game/Shaders/shader.frag.spv"
+  COMMAND = cmd.exe /C "cd /D C:\Users\nicho\Desktop\Aetherborne\Aetherborne\out\build\x64-Debug\Game && C:\Users\nicho\Desktop\AetherborneDocs\Libraries\Vulkan\1.2.135.0\Bin\glslc.exe C:/Users/nicho/Desktop/Aetherborne/Aetherborne/Game/Shaders/shader.frag -o C:/Users/nicho/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/Game/Shaders/shader.frag.spv"
   DESC = Generating Shaders/shader.frag.spv
   restat = 1
 
@@ -991,11 +991,11 @@ build Game: phony Game\Game.exe
 
 build Game.exe: phony Game\Game.exe
 
-build glfw: phony C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.lib
+build glfw: phony C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.lib
 
-build glfw3.lib: phony C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.lib
+build glfw3.lib: phony C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.lib
 
-build uninstall: phony C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\uninstall
+build uninstall: phony C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\uninstall
 
 # =============================================================================
 # Folder targets.
@@ -1003,37 +1003,37 @@ build uninstall: phony C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Librarie
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug
+# Folder: C:/Users/nicho/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug
 
 build all: phony Engine\all Game\all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/Engine
+# Folder: C:/Users/nicho/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/Engine
 
 build Engine\all: phony Engine\Engine.lib
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/nicho/OneDrive/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/Game
+# Folder: C:/Users/nicho/Desktop/Aetherborne/Aetherborne/out/build/x64-Debug/Game
 
 build Game\all: phony Game\FastNoise.lib Game\Game.exe
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/glfw-3.3.2/build
+# Folder: C:/Users/nicho/Desktop/AetherborneDocs/Libraries/glfw-3.3.2/build
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\all: phony C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\all
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\all: phony C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/glfw-3.3.2/build/src
+# Folder: C:/Users/nicho/Desktop/AetherborneDocs/Libraries/glfw-3.3.2/build/src
 
-build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\all: phony C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.lib
+build C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\all: phony C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\build\src\glfw3.lib
 
 # =============================================================================
 # Built-in targets
@@ -1042,14 +1042,14 @@ build C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\buil
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\Engine\CMakeLists.txt ..\..\..\Game\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\FindThreads.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\CMakeLists.txt C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\cmake_uninstall.cmake.in C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\CMakeLists.txt C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\glfw3.pc.in C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\glfw3Config.cmake.in C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\glfw_config.h.in CMakeCache.txt CMakeFiles\3.17.20032601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\Engine\CMakeLists.txt ..\..\..\Game\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCCompilerABI.c C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineCompileFeatures.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystem.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CheckIncludeFile.c.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\FindThreads.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\CMakeLists.txt C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\cmake_uninstall.cmake.in C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\CMakeLists.txt C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\glfw3.pc.in C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\glfw3Config.cmake.in C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\glfw_config.h.in CMakeCache.txt CMakeFiles\3.17.20032601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\..\CMakeLists.txt ..\..\..\Engine\CMakeLists.txt ..\..\..\Game\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\FindThreads.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\CMakeLists.txt C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\cmake_uninstall.cmake.in C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\CMakeLists.txt C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\glfw3.pc.in C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\glfw3Config.cmake.in C$:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\glfw_config.h.in CMakeCache.txt CMakeFiles\3.17.20032601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeSystem.cmake: phony
+build ..\..\..\CMakeLists.txt ..\..\..\Engine\CMakeLists.txt ..\..\..\Game\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCCompilerABI.c C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineCompileFeatures.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystem.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CheckIncludeFile.c.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\FindThreads.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\CMakeLists.txt C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\cmake_uninstall.cmake.in C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\CMakeLists.txt C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\glfw3.pc.in C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\glfw3Config.cmake.in C$:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2\src\glfw_config.h.in CMakeCache.txt CMakeFiles\3.17.20032601-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.17.20032601-MSVC_2\CMakeSystem.cmake: phony
 
 
 #############################################

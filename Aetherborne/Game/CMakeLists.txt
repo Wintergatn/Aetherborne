@@ -2,9 +2,9 @@ cmake_minimum_required (VERSION 3.8)
 
 project ("Game")
 
-set(GLSL_COMPILER "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/Vulkan/1.2.135.0/Bin/glslc.exe")
-set(STB_INCLUDE "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/stb-master")
-set(FASTNOISE_ROOT "C:/Users/nicho/OneDrive/Desktop/AetherborneDocs/Libraries/FastNoise-master")
+set(GLSL_COMPILER "C:/Users/nicho/Desktop/AetherborneDocs/Libraries/Vulkan/1.2.135.0/Bin/glslc.exe")
+set(STB_INCLUDE "C:/Users/nicho/Desktop/AetherborneDocs/Libraries/stb-master")
+set(FASTNOISE_ROOT "C:/Users/nicho/Desktop/AetherborneDocs/Libraries/FastNoise-master")
 
 add_library("FastNoise"
     ${FASTNOISE_ROOT}/FastNoise.h

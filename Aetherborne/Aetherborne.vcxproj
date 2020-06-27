@@ -88,13 +88,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Desktop\Vulkan\1.2.135.0\Include;C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\include;C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\Desktop\Vulkan\1.2.135.0\Include;C:\Users\nicho\\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\include;C:\Users\nicho\\Desktop\AetherborneDocs\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\nicho\OneDrive\Desktop\Vulkan\1.2.135.0\Lib;C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\nicho\Desktop\Vulkan\1.2.135.0\Lib;C:\Users\nicho\\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EntryPointSymbol>
       </EntryPointSymbol>
@@ -108,7 +108,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Desktop\Vulkan\1.2.135.0\Include;C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\include;C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\Desktop\Vulkan\1.2.135.0\Include;C:\Users\nicho\\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\include;C:\Users\nicho\\Desktop\AetherborneDocs\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -116,7 +116,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\nicho\OneDrive\Desktop\Vulkan\1.2.135.0\Lib;C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\nicho\Desktop\Vulkan\1.2.135.0\Lib;C:\Users\nicho\\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EntryPointSymbol>
       </EntryPointSymbol>
@@ -128,13 +128,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Desktop\Vulkan\1.2.135.0\Include;C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\include;C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\Desktop\Vulkan\1.2.135.0\Include;C:\Users\nicho\\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\include;C:\Users\nicho\\Desktop\AetherborneDocs\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\nicho\OneDrive\Desktop\Vulkan\1.2.135.0\Lib;C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\nicho\Desktop\Vulkan\1.2.135.0\Lib;C:\Users\nicho\\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EntryPointSymbol>
       </EntryPointSymbol>
@@ -148,7 +148,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\nicho\OneDrive\Desktop\Vulkan\1.2.135.0\Include;C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\include;C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nicho\Desktop\Vulkan\1.2.135.0\Include;C:\Users\nicho\\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\include;C:\Users\nicho\\Desktop\AetherborneDocs\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -156,7 +156,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\nicho\OneDrive\Desktop\Vulkan\1.2.135.0\Lib;C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\nicho\Desktop\Vulkan\1.2.135.0\Lib;C:\Users\nicho\\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EntryPointSymbol>
       </EntryPointSymbol>

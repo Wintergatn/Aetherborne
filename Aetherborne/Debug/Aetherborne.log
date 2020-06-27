@@ -6,6 +6,6 @@ main.obj : error LNK2019: unresolved external symbol _glfwCreateWindow reference
 main.obj : error LNK2019: unresolved external symbol _glfwDestroyWindow referenced in function _main
 main.obj : error LNK2019: unresolved external symbol _glfwWindowShouldClose referenced in function _main
 main.obj : error LNK2019: unresolved external symbol _glfwPollEvents referenced in function _main
-C:\Users\nicho\OneDrive\Desktop\Vulkan\1.2.135.0\Lib\vulkan-1.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
-C:\Users\nicho\OneDrive\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\lib-vc2019\glfw3.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
-C:\Users\nicho\OneDrive\Desktop\Aetherborne\Debug\Aetherborne.exe : fatal error LNK1120: 8 unresolved externals
+C:\Users\nicho\Desktop\Vulkan\1.2.135.0\Lib\vulkan-1.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\nicho\Desktop\AetherborneDocs\Libraries\glfw-3.3.2.bin.WIN64\lib-vc2019\glfw3.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\nicho\Desktop\Aetherborne\Debug\Aetherborne.exe : fatal error LNK1120: 8 unresolved externals
